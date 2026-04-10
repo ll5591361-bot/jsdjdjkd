@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数词修复工具</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .btn-primary {
+            background: #4CAF50;
+            color: white;
+        }
+        .btn-primary:hover {
+            background: #45a049;
+        }
+        .btn-secondary {
+            background: #2196F3;
+            color: white;
+        }
+        .btn-secondary:hover {
+            background: #0b7dda;
+        }
+        #status {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 5px;
+            background: #e3f2fd;
+            min-height: 100px;
+            white-space: pre-wrap;
+            font-family: monospace;
+            font-size: 14px;
+        }
+        .success {
+            background: #d4edda !important;
+            color: #155724;
+        }
+        .error {
+            background: #f8d7da !important;
+            color: #721c24;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔢 数词修复工具</h1>
+        <p style="text-align: center; color: #666;">
+            此工具将重新排列 words-data.json 中的数词，使其按数字顺序排列
+        </p>
+        
+        <button class="btn btn-primary" onclick="loadAndFix()">
+            1. 加载并修复数词
+        </button>
+        
+        <button class="btn btn-secondary" onclick="downloadFixedFile()" id="downloadBtn" style="display: none;">
+            2. 下载修复后的文件
+        </button>
+        
+        <div id="status">请点击"加载并修复数词"按钮开始...</div>
+    </div>
+
+    <script>
+        let fixedData = null;
+        
+        const numeralOrder = [
+            // 基数词 0-19
+            'zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine',
+            'ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen',
+            'seventeen', 'eighteen', 'nineteen',
+            // 整十基数词
+            'twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety',
+            // 大数
+            'hundred', 'thousand', 'million',
+            // 序数词
+            'first', 'second', 'third', 'fourth', 'fifth', 'sixth', 'seventh', 'eighth', 'ninth', 'tenth',
+            // 其他数量词
+            'half', 'quarter', 'double', 'triple', 'dozen', 'single', 'pair', 'couple', 'several', 'both'
+        ];
+        
+        async function loadAndFix() {
+            const status = document.getElementById('status');
+            status.textContent = '正在加载 words-data.json...';
+            status.className = '';
+            
+            try {
+                // 加载JSON文件
+                const response = await fetch('words-data.json');
+                if (!response.ok) {
+                    throw new Error('无法加载 words-data.json，请确保文件在同一目录下');
+                }
+                
+                const data = await response.json();
+                const words = data.words;
+                
+                status.textContent += '\n文件加载成功，共 ' + words.length + ' 个单词';
+                
+                // 分离数词和其他单词
+                const numerals = [];
+                const others = [];
+                
+                for (const word of words) {
+                    if (word.pos === 'numeral') {
+                        numerals.push(word);
+                    } else {
+                        others.push(word);
+                    }
+                }
+                
+                status.textContent += '\n找到 ' + numerals.length + ' 个数词';
+                status.textContent += '\n其他单词: ' + others.length + ' 个';
+                
+                // 创建数词字典
+                const numeralDict = {};
+                for (const n of numerals) {
+                    numeralDict[n.word] = n;
+                }
+                
+                // 按顺序排列数词
+                const sortedNumerals = [];
+                for (const wordName of numeralOrder) {
+                    if (numeralDict[wordName]) {
+                        sortedNumerals.push(numeralDict[wordName]);
+                        status.textContent += '\n✓ ' + wordName;
+                    } else {
+                        status.textContent += '\n✗ 未找到: ' + wordName;
+                    }
+                }
+                
+                status.textContent += '\n\n排序后数词数量: ' + sortedNumerals.length;
+                
+                // 找到插入位置（在interjection之后）
+                let insertIndex = 0;
+                for (let i = 0; i < others.length; i++) {
+                    if (others[i].pos === 'interjection') {
+                        insertIndex = i + 1;
+                    }
+                }
+                
+                status.textContent += '\n插入位置: ' + insertIndex;
+                
+                // 合并列表
+                const newWords = [
+                    ...others.slice(0, insertIndex),
+                    ...sortedNumerals,
+                    ...others.slice(insertIndex)
+                ];
+                
+                status.textContent += '\n新单词总数: ' + newWords.length;
+                
+                // 保存修复后的数据
+                data.words = newWords;
+                fixedData = data;
+                
+                status.textContent += '\n\n✅ 修复完成！请点击"下载修复后的文件"按钮';
+                status.className = 'success';
+                
+                // 显示下载按钮
+                document.getElementById('downloadBtn').style.display = 'block';
+                
+            } catch (error) {
+                status.textContent = '❌ 错误: ' + error.message;
+                status.className = 'error';
+            }
+        }
+        
+        function downloadFixedFile() {
+            if (!fixedData) {
+                alert('请先点击"加载并修复数词"按钮');
+                return;
+            }
+            
+            // 将数据转换为JSON字符串
+            const jsonStr = JSON.stringify(fixedData, null, 4);
+            
+            // 创建Blob
+            const blob = new Blob([jsonStr], { type: 'application/json' });
+            
+            // 创建下载链接
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'words-data-fixed.json';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+            
+            const status = document.getElementById('status');
+            status.textContent += '\n\n📥 文件已下载为 words-data-fixed.json';
+            status.textContent += '\n请将此文件重命名为 words-data.json 并替换原文件';
+        }
+    </script>
+</body>
+</html>

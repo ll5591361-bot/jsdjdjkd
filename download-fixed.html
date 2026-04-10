@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>下载修复后的文件</title>
+</head>
+<body>
+    <h1>下载修复后的 words-data.json</h1>
+    <p>点击下面的链接下载修复后的文件，然后手动替换原文件：</p>
+    <a id="download" href="#" download="words-data.json" style="font-size: 24px; padding: 20px; display: inline-block; background: #4CAF50; color: white; text-decoration: none; border-radius: 8px;">下载 words-data.json</a>
+    <div id="status"></div>
+    
+    <script>
+        const targetCounts = {
+            'daily': 100,
+            'business': 100,
+            'travel': 100,
+            'food': 100,
+            'technology': 100,
+            'education': 86,
+            'sports': 100,
+            'medical': 100
+        };
+        
+        fetch('sports_words_batch1.json')
+            .then(response => response.json())
+            .then(data => {
+                const words = data.words;
+                
+                // 按分类分组
+                const categoryGroups = {};
+                words.forEach(w => {
+                    const cat = w.category;
+                    if (!categoryGroups[cat]) categoryGroups[cat] = [];
+                    categoryGroups[cat].push(w);
+                });
+                
+                // 调整每个分类的数量
+                const newWords = [];
+                let statusHtml = '<h3>处理结果：</h3><ul>';
+                for (const [cat, catWords] of Object.entries(categoryGroups)) {
+                    const target = targetCounts[cat] || catWords.length;
+                    const keptWords = catWords.slice(0, target);
+                    newWords.push(...keptWords);
+                    statusHtml += `<li>${cat}: 原${catWords.length}个 → 保留${keptWords.length}个</li>`;
+                }
+                statusHtml += `</ul><p><strong>新总单词数: ${newWords.length}</strong></p>`;
+                document.getElementById('status').innerHTML = statusHtml;
+                
+                // 创建下载链接
+                const jsonStr = JSON.stringify({ words: newWords }, null, 4);
+                const blob = new Blob([jsonStr], { type: 'application/json' });
+                const url = URL.createObjectURL(blob);
+                document.getElementById('download').href = url;
+            });
+    </script>
+</body>
+</html>

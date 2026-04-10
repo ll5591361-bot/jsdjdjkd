@@ -1,0 +1,1356 @@
+{
+  "words": [
+    {
+      "word": "able",
+      "phonetic": "/ˈeɪbl/",
+      "meaning": "adj. 能够的",
+      "sentence": "He is able to swim.",
+      "sentencePhonetic": "/hiː ɪz ˈeɪbl tuː swɪm/",
+      "letters": ["A", "B", "L", "E"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "active",
+      "phonetic": "/ˈæktɪv/",
+      "meaning": "adj. 积极的",
+      "sentence": "She is active in sports.",
+      "sentencePhonetic": "/ʃiː ɪz ˈæktɪv ɪn spɔːts/",
+      "letters": ["A", "C", "T", "I", "V", "E"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "actual",
+      "phonetic": "/ˈæktʃuəl/",
+      "meaning": "adj. 实际的",
+      "sentence": "The actual cost was higher than expected.",
+      "sentencePhonetic": "/ðə ˈæktʃuəl kɒst wɒz ˈhaɪə ðæn ɪksˈpektɪd/",
+      "letters": ["A", "C", "T", "U", "A", "L"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "additional",
+      "phonetic": "/əˈdɪʃənl/",
+      "meaning": "adj. 额外的",
+      "sentence": "We need additional help.",
+      "sentencePhonetic": "/wiː niːd əˈdɪʃənl help/",
+      "letters": ["A", "D", "D", "I", "T", "I", "O", "N", "A", "L"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "adequate",
+      "phonetic": "/ˈædɪkwət/",
+      "meaning": "adj. 足够的",
+      "sentence": "The food was adequate for everyone.",
+      "sentencePhonetic": "/ðə fuːd wɒz ˈædɪkwət fɔːr ˈevriwʌn/",
+      "letters": ["A", "D", "E", "Q", "U", "A", "T", "E"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "advanced",
+      "phonetic": "/ədˈvɑːnst/",
+      "meaning": "adj. 先进的",
+      "sentence": "She has advanced skills.",
+      "sentencePhonetic": "/ʃiː hæz ədˈvɑːnst skɪlz/",
+      "letters": ["A", "D", "V", "A", "N", "C", "E", "D"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "aggressive",
+      "phonetic": "/əˈɡresɪv/",
+      "meaning": "adj. 侵略性的",
+      "sentence": "He has an aggressive style.",
+      "sentencePhonetic": "/hiː hæz ən əˈɡresɪv staɪl/",
+      "letters": ["A", "G", "G", "R", "E", "S", "S", "I", "V", "E"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "alert",
+      "phonetic": "/əˈlɜːt/",
+      "meaning": "adj. 警觉的",
+      "sentence": "She remained alert during the meeting.",
+      "sentencePhonetic": "/ʃiː rɪˈmeɪnd əˈlɜːt ˈdjʊərɪŋ ðə ˈmiːtɪŋ/",
+      "letters": ["A", "L", "E", "R", "T"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "ancient",
+      "phonetic": "/ˈeɪnʃənt/",
+      "meaning": "adj. 古代的",
+      "sentence": "The ancient ruins are fascinating.",
+      "sentencePhonetic": "/ði ˈeɪnʃənt ˈruːɪnz ɑː ˈfæsɪneɪtɪŋ/",
+      "letters": ["A", "N", "C", "I", "E", "N", "T"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "annual",
+      "phonetic": "/ˈænjuəl/",
+      "meaning": "adj. 年度的",
+      "sentence": "The annual meeting is next week.",
+      "sentencePhonetic": "/ði ˈænjuəl ˈmiːtɪŋ ɪz nekst wiːk/",
+      "letters": ["A", "N", "N", "U", "A", "L"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "anxious",
+      "phonetic": "/ˈæŋkʃəs/",
+      "meaning": "adj. 焦虑的",
+      "sentence": "She was anxious about the exam.",
+      "sentencePhonetic": "/ʃiː wɒz ˈæŋkʃəs əˈbaʊt ði ɪɡˈzæm/",
+      "letters": ["A", "N", "X", "I", "O", "U", "S"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "apparent",
+      "phonetic": "/əˈpærənt/",
+      "meaning": "adj. 明显的",
+      "sentence": "It was apparent that he was lying.",
+      "sentencePhonetic": "/ɪt wɒz əˈpærənt ðæt hiː wɒz ˈlaɪɪŋ/",
+      "letters": ["A", "P", "P", "A", "R", "E", "N", "T"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "appropriate",
+      "phonetic": "/əˈprəʊpriət/",
+      "meaning": "adj. 适当的",
+      "sentence": "It's appropriate to wear formal clothes.",
+      "sentencePhonetic": "/ɪts əˈprəʊpriət tuː weə ˈfɔːml kləʊðz/",
+      "letters": ["A", "P", "P", "R", "O", "P", "R", "I", "A", "T", "E"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "artificial",
+      "phonetic": "/ˌɑːtɪˈfɪʃl/",
+      "meaning": "adj. 人造的",
+      "sentence": "The flowers are artificial.",
+      "sentencePhonetic": "/ðə ˈflaʊəz ɑː ˌɑːtɪˈfɪʃl/",
+      "letters": ["A", "R", "T", "I", "F", "I", "C", "I", "A", "L"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "attractive",
+      "phonetic": "/əˈtræktɪv/",
+      "meaning": "adj. 有吸引力的",
+      "sentence": "She is very attractive.",
+      "sentencePhonetic": "/ʃiː ɪz ˈveri əˈtræktɪv/",
+      "letters": ["A", "T", "T", "R", "A", "C", "T", "I", "V", "E"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "automatic",
+      "phonetic": "/ˌɔːtəˈmætɪk/",
+      "meaning": "adj. 自动的",
+      "sentence": "The door opens automatically.",
+      "sentencePhonetic": "/ðə dɔː ˈəʊpənz ˌɔːtəˈmætɪkli/",
+      "letters": ["A", "U", "T", "O", "M", "A", "T", "I", "C"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "available",
+      "phonetic": "/əˈveɪləbl/",
+      "meaning": "adj. 可用的",
+      "sentence": "The product is available now.",
+      "sentencePhonetic": "/ðə ˈprɒdʌkt ɪz əˈveɪləbl naʊ/",
+      "letters": ["A", "V", "A", "I", "L", "A", "B", "L", "E"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "aware",
+      "phonetic": "/əˈweə(r)/",
+      "meaning": "adj. 意识到的",
+      "sentence": "He was aware of the problem.",
+      "sentencePhonetic": "/hiː wɒz əˈweə əv ðə ˈprɒbləm/",
+      "letters": ["A", "W", "A", "R", "E"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "awful",
+      "phonetic": "/ˈɔːfl/",
+      "meaning": "adj. 可怕的",
+      "sentence": "The weather is awful today.",
+      "sentencePhonetic": "/ðə ˈweðə ɪz ˈɔːfl təˈdeɪ/",
+      "letters": ["A", "W", "F", "U", "L"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "basic",
+      "phonetic": "/ˈbeɪsɪk/",
+      "meaning": "adj. 基本的",
+      "sentence": "I need to learn basic skills.",
+      "sentencePhonetic": "/aɪ niːd tuː lɜːn ˈbeɪsɪk skɪlz/",
+      "letters": ["B", "A", "S", "I", "C"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "beneficial",
+      "phonetic": "/ˌbenɪˈfɪʃl/",
+      "meaning": "adj. 有益的",
+      "sentence": "Exercise is beneficial to health.",
+      "sentencePhonetic": "/ˈeksəsaɪz ɪz ˌbenɪˈfɪʃl tuː helθ/",
+      "letters": ["B", "E", "N", "E", "F", "I", "C", "I", "A", "L"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "bitter",
+      "phonetic": "/ˈbɪtə(r)/",
+      "meaning": "adj. 苦的",
+      "sentence": "The coffee is bitter.",
+      "sentencePhonetic": "/ðə ˈkɒfi ɪz ˈbɪtə/",
+      "letters": ["B", "I", "T", "T", "E", "R"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "bold",
+      "phonetic": "/bəʊld/",
+      "meaning": "adj. 大胆的",
+      "sentence": "He made a bold decision.",
+      "sentencePhonetic": "/hiː meɪd ə bəʊld dɪˈsɪʒn/",
+      "letters": ["B", "O", "L", "D"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "brief",
+      "phonetic": "/briːf/",
+      "meaning": "adj. 简短的",
+      "sentence": "He gave a brief speech.",
+      "sentencePhonetic": "/hiː ɡeɪv ə briːf spiːtʃ/",
+      "letters": ["B", "R", "I", "E", "F"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "broad",
+      "phonetic": "/brɔːd/",
+      "meaning": "adj. 广阔的",
+      "sentence": "The road is broad.",
+      "sentencePhonetic": "/ðə rəʊd ɪz brɔːd/",
+      "letters": ["B", "R", "O", "A", "D"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "calm",
+      "phonetic": "/kɑːm/",
+      "meaning": "adj. 平静的",
+      "sentence": "The sea is calm.",
+      "sentencePhonetic": "/ðə siː ɪz kɑːm/",
+      "letters": ["C", "A", "L", "M"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "capable",
+      "phonetic": "/ˈkeɪpəbl/",
+      "meaning": "adj. 有能力的",
+      "sentence": "She is capable of doing the job.",
+      "sentencePhonetic": "/ʃiː ɪz ˈkeɪpəbl əv ˈduːɪŋ ðə dʒɒb/",
+      "letters": ["C", "A", "P", "A", "B", "L", "E"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "careful",
+      "phonetic": "/ˈkeəfl/",
+      "meaning": "adj. 小心的",
+      "sentence": "Be careful when crossing the road.",
+      "sentencePhonetic": "/biː ˈkeəfl wen ˈkrɒsɪŋ ðə rəʊd/",
+      "letters": ["C", "A", "R", "E", "F", "U", "L"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "casual",
+      "phonetic": "/ˈkæʒuəl/",
+      "meaning": "adj. 随意的",
+      "sentence": "He wears casual clothes.",
+      "sentencePhonetic": "/hiː weəz ˈkæʒuəl kləʊðz/",
+      "letters": ["C", "A", "S", "U", "A", "L"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "central",
+      "phonetic": "/ˈsentrəl/",
+      "meaning": "adj. 中心的",
+      "sentence": "The hotel is in a central location.",
+      "sentencePhonetic": "/ðə həʊˈtel ɪz ɪn ə ˈsentrəl ləʊˈkeɪʃn/",
+      "letters": ["C", "E", "N", "T", "R", "A", "L"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "certain",
+      "phonetic": "/ˈsɜːtn/",
+      "meaning": "adj. 确定的",
+      "sentence": "I am certain about this.",
+      "sentencePhonetic": "/aɪ æm ˈsɜːtn əˈbaʊt ðɪs/",
+      "letters": ["C", "E", "R", "T", "A", "I", "N"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "cheap",
+      "phonetic": "/tʃiːp/",
+      "meaning": "adj. 便宜的",
+      "sentence": "The price is cheap.",
+      "sentencePhonetic": "/ðə praɪs ɪz tʃiːp/",
+      "letters": ["C", "H", "E", "A", "P"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "chief",
+      "phonetic": "/tʃiːf/",
+      "meaning": "adj. 主要的",
+      "sentence": "The chief reason is cost.",
+      "sentencePhonetic": "/ðə tʃiːf ˈriːzn ɪz kɒst/",
+      "letters": ["C", "H", "I", "E", "F"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "civil",
+      "phonetic": "/ˈsɪvl/",
+      "meaning": "adj. 公民的",
+      "sentence": "It's a civil right.",
+      "sentencePhonetic": "/ɪts ə ˈsɪvl raɪt/",
+      "letters": ["C", "I", "V", "I", "L"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "classic",
+      "phonetic": "/ˈklæsɪk/",
+      "meaning": "adj. 经典的",
+      "sentence": "It's a classic movie.",
+      "sentencePhonetic": "/ɪts ə ˈklæsɪk ˈmuːvi/",
+      "letters": ["C", "L", "A", "S", "S", "I", "C"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "clear",
+      "phonetic": "/klɪə(r)/",
+      "meaning": "adj. 清晰的",
+      "sentence": "The water is clear.",
+      "sentencePhonetic": "/ðə ˈwɔːtə ɪz klɪə/",
+      "letters": ["C", "L", "E", "A", "R"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "clever",
+      "phonetic": "/ˈklevə(r)/",
+      "meaning": "adj. 聪明的",
+      "sentence": "He is clever at math.",
+      "sentencePhonetic": "/hiː ɪz ˈklevə æt mæθ/",
+      "letters": ["C", "L", "E", "V", "E", "R"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "close",
+      "phonetic": "/kləʊs/",
+      "meaning": "adj. 接近的",
+      "sentence": "The store is close to my house.",
+      "sentencePhonetic": "/ðə stɔː ɪz kləʊs tuː maɪ haʊs/",
+      "letters": ["C", "L", "O", "S", "E"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "collective",
+      "phonetic": "/kəˈlektɪv/",
+      "meaning": "adj. 集体的",
+      "sentence": "It's a collective decision.",
+      "sentencePhonetic": "/ɪts ə kəˈlektɪv dɪˈsɪʒn/",
+      "letters": ["C", "O", "L", "L", "E", "C", "T", "I", "V", "E"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "comfortable",
+      "phonetic": "/ˈkʌmftəbl/",
+      "meaning": "adj. 舒适的",
+      "sentence": "The chair is comfortable.",
+      "sentencePhonetic": "/ðə tʃeə ɪz ˈkʌmftəbl/",
+      "letters": ["C", "O", "M", "F", "O", "R", "T", "A", "B", "L", "E"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "common",
+      "phonetic": "/ˈkɒmən/",
+      "meaning": "adj. 常见的",
+      "sentence": "It's a common problem.",
+      "sentencePhonetic": "/ɪts ə ˈkɒmən ˈprɒbləm/",
+      "letters": ["C", "O", "M", "M", "O", "N"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "competitive",
+      "phonetic": "/kəmˈpetətɪv/",
+      "meaning": "adj. 竞争的",
+      "sentence": "The market is competitive.",
+      "sentencePhonetic": "/ðə ˈmɑːkɪt ɪz kəmˈpetətɪv/",
+      "letters": ["C", "O", "M", "P", "E", "T", "I", "T", "I", "V", "E"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "complete",
+      "phonetic": "/kəmˈpliːt/",
+      "meaning": "adj. 完整的",
+      "sentence": "The task is complete.",
+      "sentencePhonetic": "/ðə tɑːsk ɪz kəmˈpliːt/",
+      "letters": ["C", "O", "M", "P", "L", "E", "T", "E"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "complex",
+      "phonetic": "/ˈkɒmpleks/",
+      "meaning": "adj. 复杂的",
+      "sentence": "The problem is complex.",
+      "sentencePhonetic": "/ðə ˈprɒbləm ɪz ˈkɒmpleks/",
+      "letters": ["C", "O", "M", "P", "L", "E", "X"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "confident",
+      "phonetic": "/ˈkɒnfɪdənt/",
+      "meaning": "adj. 自信的",
+      "sentence": "She is confident in her abilities.",
+      "sentencePhonetic": "/ʃiː ɪz ˈkɒnfɪdənt ɪn hə ˈəˈbɪlətiz/",
+      "letters": ["C", "O", "N", "F", "I", "D", "E", "N", "T"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "conscious",
+      "phonetic": "/ˈkɒnʃəs/",
+      "meaning": "adj. 有意识的",
+      "sentence": "He was conscious of the risk.",
+      "sentencePhonetic": "/hiː wɒz ˈkɒnʃəs əv ðə rɪsk/",
+      "letters": ["C", "O", "N", "S", "C", "I", "O", "U", "S"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "consistent",
+      "phonetic": "/kənˈsɪstənt/",
+      "meaning": "adj. 一致的",
+      "sentence": "His performance is consistent.",
+      "sentencePhonetic": "/hɪz pəˈfɔːməns ɪz kənˈsɪstənt/",
+      "letters": ["C", "O", "N", "S", "I", "S", "T", "E", "N", "T"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "constant",
+      "phonetic": "/ˈkɒnstənt/",
+      "meaning": "adj. 不变的",
+      "sentence": "The temperature is constant.",
+      "sentencePhonetic": "/ðə ˈtemprətʃə ɪz ˈkɒnstənt/",
+      "letters": ["C", "O", "N", "S", "T", "A", "N", "T"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "convenient",
+      "phonetic": "/kənˈviːniənt/",
+      "meaning": "adj. 方便的",
+      "sentence": "It's convenient to use.",
+      "sentencePhonetic": "/ɪts kənˈviːniənt tuː juːz/",
+      "letters": ["C", "O", "N", "V", "E", "N", "I", "E", "N", "T"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "cool",
+      "phonetic": "/kuːl/",
+      "meaning": "adj. 凉爽的",
+      "sentence": "The weather is cool today.",
+      "sentencePhonetic": "/ðə ˈweðə ɪz kuːl təˈdeɪ/",
+      "letters": ["C", "O", "O", "L"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "correct",
+      "phonetic": "/kəˈrekt/",
+      "meaning": "adj. 正确的",
+      "sentence": "The answer is correct.",
+      "sentencePhonetic": "/ðə ˈɑːnsə ɪz kəˈrekt/",
+      "letters": ["C", "O", "R", "R", "E", "C", "T"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "creative",
+      "phonetic": "/kriˈeɪtɪv/",
+      "meaning": "adj. 创造性的",
+      "sentence": "She is very creative.",
+      "sentencePhonetic": "/ʃiː ɪz ˈveri kriˈeɪtɪv/",
+      "letters": ["C", "R", "E", "A", "T", "I", "V", "E"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "crucial",
+      "phonetic": "/ˈkruːʃl/",
+      "meaning": "adj. 关键的",
+      "sentence": "It's a crucial decision.",
+      "sentencePhonetic": "/ɪts ə ˈkruːʃl dɪˈsɪʒn/",
+      "letters": ["C", "R", "U", "C", "I", "A", "L"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "cultural",
+      "phonetic": "/ˈkʌltʃərəl/",
+      "meaning": "adj. 文化的",
+      "sentence": "It's a cultural event.",
+      "sentencePhonetic": "/ɪts ə ˈkʌltʃərəl ɪˈvent/",
+      "letters": ["C", "U", "L", "T", "U", "R", "A", "L"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "curious",
+      "phonetic": "/ˈkjʊəriəs/",
+      "meaning": "adj. 好奇的",
+      "sentence": "The child is curious about everything.",
+      "sentencePhonetic": "/ðə tʃaɪld ɪz ˈkjʊəriəs əˈbaʊt ˈevriθɪŋ/",
+      "letters": ["C", "U", "R", "I", "O", "U", "S"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "current",
+      "phonetic": "/ˈkʌrənt/",
+      "meaning": "adj. 当前的",
+      "sentence": "The current situation is difficult.",
+      "sentencePhonetic": "/ðə ˈkʌrənt ˌsɪtʃuˈeɪʃn ɪz ˈdɪfɪkəlt/",
+      "letters": ["C", "U", "R", "R", "E", "N", "T"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "daily",
+      "phonetic": "/ˈdeɪli/",
+      "meaning": "adj. 日常的",
+      "sentence": "I have daily tasks.",
+      "sentencePhonetic": "/aɪ hæv ˈdeɪli tɑːsks/",
+      "letters": ["D", "A", "I", "L", "Y"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "dear",
+      "phonetic": "/dɪə(r)/",
+      "meaning": "adj. 亲爱的",
+      "sentence": "My dear friend.",
+      "sentencePhonetic": "/maɪ dɪə frend/",
+      "letters": ["D", "E", "A", "R"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "deep",
+      "phonetic": "/diːp/",
+      "meaning": "adj. 深的",
+      "sentence": "The lake is deep.",
+      "sentencePhonetic": "/ðə leɪk ɪz diːp/",
+      "letters": ["D", "E", "E", "P"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "definite",
+      "phonetic": "/ˈdefɪnət/",
+      "meaning": "adj. 确定的",
+      "sentence": "I have a definite plan.",
+      "sentencePhonetic": "/aɪ hæv ə ˈdefɪnət plæn/",
+      "letters": ["D", "E", "F", "I", "N", "I", "T", "E"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "delicate",
+      "phonetic": "/ˈdelɪkət/",
+      "meaning": "adj. 精致的",
+      "sentence": "The flower is delicate.",
+      "sentencePhonetic": "/ðə ˈflaʊə ɪz ˈdelɪkət/",
+      "letters": ["D", "E", "L", "I", "C", "A", "T", "E"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "delicious",
+      "phonetic": "/dɪˈlɪʃəs/",
+      "meaning": "adj. 美味的",
+      "sentence": "The food is delicious.",
+      "sentencePhonetic": "/ðə fuːd ɪz dɪˈlɪʃəs/",
+      "letters": ["D", "E", "L", "I", "C", "I", "O", "U", "S"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "dependent",
+      "phonetic": "/dɪˈpendənt/",
+      "meaning": "adj. 依赖的",
+      "sentence": "She is dependent on her parents.",
+      "sentencePhonetic": "/ʃiː ɪz dɪˈpendənt ɒn hə ˈpeərənts/",
+      "letters": ["D", "E", "P", "E", "N", "D", "E", "N", "T"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "detailed",
+      "phonetic": "/ˈdiːteɪld/",
+      "meaning": "adj. 详细的",
+      "sentence": "The report is detailed.",
+      "sentencePhonetic": "/ðə rɪˈpɔːt ɪz ˈdiːteɪld/",
+      "letters": ["D", "E", "T", "A", "I", "L", "E", "D"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "direct",
+      "phonetic": "/dəˈrekt/",
+      "meaning": "adj. 直接的",
+      "sentence": "He gave a direct answer.",
+      "sentencePhonetic": "/hiː ɡeɪv ə dəˈrekt ˈɑːnsə/",
+      "letters": ["D", "I", "R", "E", "C", "T"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "distinct",
+      "phonetic": "/dɪˈstɪŋkt/",
+      "meaning": "adj. 明显的",
+      "sentence": "There is a distinct difference.",
+      "sentencePhonetic": "/ðeə ɪz ə dɪˈstɪŋkt ˈdɪfrəns/",
+      "letters": ["D", "I", "S", "T", "I", "N", "C", "T"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "diverse",
+      "phonetic": "/daɪˈvɜːs/",
+      "meaning": "adj. 多样的",
+      "sentence": "The culture is diverse.",
+      "sentencePhonetic": "/ðə ˈkʌltʃə ɪz daɪˈvɜːs/",
+      "letters": ["D", "I", "V", "E", "R", "S", "E"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "domestic",
+      "phonetic": "/dəˈmestɪk/",
+      "meaning": "adj. 国内的",
+      "sentence": "It's a domestic product.",
+      "sentencePhonetic": "/ɪts ə dəˈmestɪk ˈprɒdʌkt/",
+      "letters": ["D", "O", "M", "E", "S", "T", "I", "C"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "dramatic",
+      "phonetic": "/drəˈmætɪk/",
+      "meaning": "adj. 戏剧性的",
+      "sentence": "There was a dramatic change.",
+      "sentencePhonetic": "/ðeə wɒz ə drəˈmætɪk tʃeɪndʒ/",
+      "letters": ["D", "R", "A", "M", "A", "T", "I", "C"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "dynamic",
+      "phonetic": "/daɪˈnæmɪk/",
+      "meaning": "adj. 动态的",
+      "sentence": "The market is dynamic.",
+      "sentencePhonetic": "/ðə ˈmɑːkɪt ɪz daɪˈnæmɪk/",
+      "letters": ["D", "Y", "N", "A", "M", "I", "C"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "eager",
+      "phonetic": "/ˈiːɡə(r)/",
+      "meaning": "adj. 渴望的",
+      "sentence": "He is eager to learn.",
+      "sentencePhonetic": "/hiː ɪz ˈiːɡə tuː lɜːn/",
+      "letters": ["E", "A", "G", "E", "R"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "economic",
+      "phonetic": "/ˌiːkəˈnɒmɪk/",
+      "meaning": "adj. 经济的",
+      "sentence": "It's an economic decision.",
+      "sentencePhonetic": "/ɪts ən ˌiːkəˈnɒmɪk dɪˈsɪʒn/",
+      "letters": ["E", "C", "O", "N", "O", "M", "I", "C"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "educational",
+      "phonetic": "/ˌedʒuˈkeɪʃənl/",
+      "meaning": "adj. 教育的",
+      "sentence": "It's an educational program.",
+      "sentencePhonetic": "/ɪts ən ˌedʒuˈkeɪʃənl ˈprəʊɡræm/",
+      "letters": ["E", "D", "U", "C", "A", "T", "I", "O", "N", "A", "L"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "effective",
+      "phonetic": "/ɪˈfektɪv/",
+      "meaning": "adj. 有效的",
+      "sentence": "The method is effective.",
+      "sentencePhonetic": "/ðə ˈmeθəd ɪz ɪˈfektɪv/",
+      "letters": ["E", "F", "F", "E", "C", "T", "I", "V", "E"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "efficient",
+      "phonetic": "/ɪˈfɪʃnt/",
+      "meaning": "adj. 高效的",
+      "sentence": "The system is efficient.",
+      "sentencePhonetic": "/ðə ˈsɪstəm ɪz ɪˈfɪʃnt/",
+      "letters": ["E", "F", "F", "I", "C", "I", "E", "N", "T"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "elastic",
+      "phonetic": "/ɪˈlæstɪk/",
+      "meaning": "adj. 有弹性的",
+      "sentence": "The material is elastic.",
+      "sentencePhonetic": "/ðə məˈtɪəriəl ɪz ɪˈlæstɪk/",
+      "letters": ["E", "L", "A", "S", "T", "I", "C"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "electronic",
+      "phonetic": "/ɪˌlekˈtrɒnɪk/",
+      "meaning": "adj. 电子的",
+      "sentence": "It's an electronic device.",
+      "sentencePhonetic": "/ɪts ən ɪˌlekˈtrɒnɪk dɪˈvaɪs/",
+      "letters": ["E", "L", "E", "C", "T", "R", "O", "N", "I", "C"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "elegant",
+      "phonetic": "/ˈelɪɡənt/",
+      "meaning": "adj. 优雅的",
+      "sentence": "She looks elegant.",
+      "sentencePhonetic": "/ʃiː lʊks ˈelɪɡənt/",
+      "letters": ["E", "L", "E", "G", "A", "N", "T"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "emotional",
+      "phonetic": "/ɪˈməʊʃənl/",
+      "meaning": "adj. 情感的",
+      "sentence": "It's an emotional story.",
+      "sentencePhonetic": "/ɪts ən ɪˈməʊʃənl ˈstɔːri/",
+      "letters": ["E", "M", "O", "T", "I", "O", "N", "A", "L"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "energetic",
+      "phonetic": "/ˌenəˈdʒetɪk/",
+      "meaning": "adj. 精力充沛的",
+      "sentence": "He is energetic.",
+      "sentencePhonetic": "/hiː ɪz ˌenəˈdʒetɪk/",
+      "letters": ["E", "N", "E", "R", "G", "E", "T", "I", "C"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "equal",
+      "phonetic": "/ˈiːkwəl/",
+      "meaning": "adj. 平等的",
+      "sentence": "Everyone is equal.",
+      "sentencePhonetic": "/ˈevriwʌn ɪz ˈiːkwəl/",
+      "letters": ["E", "Q", "U", "A", "L"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "essential",
+      "phonetic": "/ɪˈsenʃl/",
+      "meaning": "adj. 必要的",
+      "sentence": "It's essential to study.",
+      "sentencePhonetic": "/ɪts ɪˈsenʃl tuː ˈstʌdi/",
+      "letters": ["E", "S", "S", "E", "N", "T", "I", "A", "L"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "ethnic",
+      "phonetic": "/ˈeθnɪk/",
+      "meaning": "adj. 种族的",
+      "sentence": "It's an ethnic group.",
+      "sentencePhonetic": "/ɪts ən ˈeθnɪk ɡruːp/",
+      "letters": ["E", "T", "H", "N", "I", "C"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "eventual",
+      "phonetic": "/ɪˈventʃuəl/",
+      "meaning": "adj. 最终的",
+      "sentence": "The eventual result was good.",
+      "sentencePhonetic": "/ði ɪˈventʃuəl rɪˈzʌlt wɒz ɡʊd/",
+      "letters": ["E", "V", "E", "N", "T", "U", "A", "L"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "evident",
+      "phonetic": "/ˈevɪdənt/",
+      "meaning": "adj. 明显的",
+      "sentence": "It's evident that he is right.",
+      "sentencePhonetic": "/ɪts ˈevɪdənt ðæt hiː ɪz raɪt/",
+      "letters": ["E", "V", "I", "D", "E", "N", "T"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "excellent",
+      "phonetic": "/ˈeksələnt/",
+      "meaning": "adj. 优秀的",
+      "sentence": "He did an excellent job.",
+      "sentencePhonetic": "/hiː dɪd ən ˈeksələnt dʒɒb/",
+      "letters": ["E", "X", "C", "E", "L", "L", "E", "N", "T"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "exclusive",
+      "phonetic": "/ɪkˈskluːsɪv/",
+      "meaning": "adj. 独家的",
+      "sentence": "It's an exclusive offer.",
+      "sentencePhonetic": "/ɪts ən ɪkˈskluːsɪv ˈɒfə/",
+      "letters": ["E", "X", "C", "L", "U", "S", "I", "V", "E"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "expensive",
+      "phonetic": "/ɪkˈspensɪv/",
+      "meaning": "adj. 昂贵的",
+      "sentence": "The car is expensive.",
+      "sentencePhonetic": "/ðə kɑː ɪz ɪkˈspensɪv/",
+      "letters": ["E", "X", "P", "E", "N", "S", "I", "V", "E"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "extensive",
+      "phonetic": "/ɪkˈstensɪv/",
+      "meaning": "adj. 广泛的",
+      "sentence": "He has extensive knowledge.",
+      "sentencePhonetic": "/hiː hæz ɪkˈstensɪv ˈnɒlɪdʒ/",
+      "letters": ["E", "X", "T", "E", "N", "S", "I", "V", "E"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "extreme",
+      "phonetic": "/ɪkˈstriːm/",
+      "meaning": "adj. 极端的",
+      "sentence": "The weather is extreme today.",
+      "sentencePhonetic": "/ðə ˈweðə ɪz ɪkˈstriːm təˈdeɪ/",
+      "letters": ["E", "X", "T", "R", "E", "M", "E"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "fair",
+      "phonetic": "/feə(r)/",
+      "meaning": "adj. 公平的",
+      "sentence": "The decision is fair.",
+      "sentencePhonetic": "/ðə dɪˈsɪʒn ɪz feə/",
+      "letters": ["F", "A", "I", "R"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "famous",
+      "phonetic": "/ˈfeɪməs/",
+      "meaning": "adj. 著名的",
+      "sentence": "He is a famous actor.",
+      "sentencePhonetic": "/hiː ɪz ə ˈfeɪməs ˈæktə/",
+      "letters": ["F", "A", "M", "O", "U", "S"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "favorite",
+      "phonetic": "/ˈfeɪvərɪt/",
+      "meaning": "adj. 最喜欢的",
+      "sentence": "It's my favorite food.",
+      "sentencePhonetic": "/ɪts maɪ ˈfeɪvərɪt fuːd/",
+      "letters": ["F", "A", "V", "O", "R", "I", "T", "E"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "federal",
+      "phonetic": "/ˈfedərəl/",
+      "meaning": "adj. 联邦的",
+      "sentence": "It's a federal law.",
+      "sentencePhonetic": "/ɪts ə ˈfedərəl lɔː/",
+      "letters": ["F", "E", "D", "E", "R", "A", "L"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "female",
+      "phonetic": "/ˈfiːmeɪl/",
+      "meaning": "adj. 女性的",
+      "sentence": "She is a female doctor.",
+      "sentencePhonetic": "/ʃiː ɪz ə ˈfiːmeɪl ˈdɒktə/",
+      "letters": ["F", "E", "M", "A", "L", "E"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "fierce",
+      "phonetic": "/fɪəs/",
+      "meaning": "adj. 凶猛的",
+      "sentence": "The tiger is fierce.",
+      "sentencePhonetic": "/ðə ˈtaɪɡə ɪz fɪəs/",
+      "letters": ["F", "I", "E", "R", "C", "E"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "final",
+      "phonetic": "/ˈfaɪnl/",
+      "meaning": "adj. 最终的",
+      "sentence": "This is the final decision.",
+      "sentencePhonetic": "/ðɪs ɪz ðə ˈfaɪnl dɪˈsɪʒn/",
+      "letters": ["F", "I", "N", "A", "L"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "financial",
+      "phonetic": "/faɪˈnænʃl/",
+      "meaning": "adj. 金融的",
+      "sentence": "It's a financial problem.",
+      "sentencePhonetic": "/ɪts ə faɪˈnænʃl ˈprɒbləm/",
+      "letters": ["F", "I", "N", "A", "N", "C", "I", "A", "L"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "firm",
+      "phonetic": "/fɜːm/",
+      "meaning": "adj. 坚定的",
+      "sentence": "He has a firm belief.",
+      "sentencePhonetic": "/hiː hæz ə fɜːm bɪˈliːf/",
+      "letters": ["F", "I", "R", "M"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "flexible",
+      "phonetic": "/ˈfleksəbl/",
+      "meaning": "adj. 灵活的",
+      "sentence": "The schedule is flexible.",
+      "sentencePhonetic": "/ðə ˈʃedjuːl ɪz ˈfleksəbl/",
+      "letters": ["F", "L", "E", "X", "I", "B", "L", "E"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "formal",
+      "phonetic": "/ˈfɔːml/",
+      "meaning": "adj. 正式的",
+      "sentence": "It's a formal event.",
+      "sentencePhonetic": "/ɪts ə ˈfɔːml ɪˈvent/",
+      "letters": ["F", "O", "R", "M", "A", "L"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "former",
+      "phonetic": "/ˈfɔːmə(r)/",
+      "meaning": "adj. 以前的",
+      "sentence": "He is my former teacher.",
+      "sentencePhonetic": "/hiː ɪz maɪ ˈfɔːmə ˈtiːtʃə/",
+      "letters": ["F", "O", "R", "M", "E", "R"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "frequent",
+      "phonetic": "/ˈfriːkwənt/",
+      "meaning": "adj. 频繁的",
+      "sentence": "She makes frequent visits.",
+      "sentencePhonetic": "/ʃiː meɪks ˈfriːkwənt ˈvɪzɪts/",
+      "letters": ["F", "R", "E", "Q", "U", "E", "N", "T"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "fresh",
+      "phonetic": "/freʃ/",
+      "meaning": "adj. 新鲜的",
+      "sentence": "The food is fresh.",
+      "sentencePhonetic": "/ðə fuːd ɪz freʃ/",
+      "letters": ["F", "R", "E", "S", "H"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "friendly",
+      "phonetic": "/ˈfrendli/",
+      "meaning": "adj. 友好的",
+      "sentence": "He is very friendly.",
+      "sentencePhonetic": "/hiː ɪz ˈveri ˈfrendli/",
+      "letters": ["F", "R", "I", "E", "N", "D", "L", "Y"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "full",
+      "phonetic": "/fʊl/",
+      "meaning": "adj. 满的",
+      "sentence": "The glass is full.",
+      "sentencePhonetic": "/ðə ɡlɑːs ɪz fʊl/",
+      "letters": ["F", "U", "L", "L"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "fundamental",
+      "phonetic": "/ˌfʌndəˈmentl/",
+      "meaning": "adj. 基础的",
+      "sentence": "It's a fundamental principle.",
+      "sentencePhonetic": "/ɪts ə ˌfʌndəˈmentl ˈprɪnsəpl/",
+      "letters": ["F", "U", "N", "D", "A", "M", "E", "N", "T", "A", "L"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "future",
+      "phonetic": "/ˈfjuːtʃə(r)/",
+      "meaning": "adj. 未来的",
+      "sentence": "It's a future plan.",
+      "sentencePhonetic": "/ɪts ə ˈfjuːtʃə plæn/",
+      "letters": ["F", "U", "T", "U", "R", "E"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "general",
+      "phonetic": "/ˈdʒenrəl/",
+      "meaning": "adj. 一般的",
+      "sentence": "It's a general rule.",
+      "sentencePhonetic": "/ɪts ə ˈdʒenrəl ruːl/",
+      "letters": ["G", "E", "N", "E", "R", "A", "L"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "generous",
+      "phonetic": "/ˈdʒenərəs/",
+      "meaning": "adj. 慷慨的",
+      "sentence": "He is very generous.",
+      "sentencePhonetic": "/hiː ɪz ˈveri ˈdʒenərəs/",
+      "letters": ["G", "E", "N", "E", "R", "O", "U", "S"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "gentle",
+      "phonetic": "/ˈdʒentl/",
+      "meaning": "adj. 温柔的",
+      "sentence": "She has a gentle voice.",
+      "sentencePhonetic": "/ʃiː hæz ə ˈdʒentl vɔɪs/",
+      "letters": ["G", "E", "N", "T", "L", "E"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "genuine",
+      "phonetic": "/ˈdʒenjuɪn/",
+      "meaning": "adj. 真诚的",
+      "sentence": "He is genuine in his intentions.",
+      "sentencePhonetic": "/hiː ɪz ˈdʒenjuɪn ɪn hɪz ɪnˈtenʃənz/",
+      "letters": ["G", "E", "N", "U", "I", "N", "E"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "global",
+      "phonetic": "/ˈɡləʊbl/",
+      "meaning": "adj. 全球的",
+      "sentence": "It's a global issue.",
+      "sentencePhonetic": "/ɪts ə ˈɡləʊbl ˈɪʃuː/",
+      "letters": ["G", "L", "O", "B", "A", "L"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "golden",
+      "phonetic": "/ˈɡəʊldən/",
+      "meaning": "adj. 金色的",
+      "sentence": "The golden sun sets in the west.",
+      "sentencePhonetic": "/ðə ˈɡəʊldən sʌn sets ɪn ðə west/",
+      "letters": ["G", "O", "L", "D", "E", "N"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "gorgeous",
+      "phonetic": "/ˈɡɔːdʒəs/",
+      "meaning": "adj. 华丽的",
+      "sentence": "She looks gorgeous.",
+      "sentencePhonetic": "/ʃiː lʊks ˈɡɔːdʒəs/",
+      "letters": ["G", "O", "R", "G", "E", "O", "U", "S"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "grand",
+      "phonetic": "/ɡrænd/",
+      "meaning": "adj. 宏伟的",
+      "sentence": "The grand building is impressive.",
+      "sentencePhonetic": "/ðə ɡrænd ˈbɪldɪŋ ɪz ɪmˈpresɪv/",
+      "letters": ["G", "R", "A", "N", "D"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "grateful",
+      "phonetic": "/ˈɡreɪtfl/",
+      "meaning": "adj. 感激的",
+      "sentence": "I am grateful for your help.",
+      "sentencePhonetic": "/aɪ æm ˈɡreɪtfl fɔː jɔː help/",
+      "letters": ["G", "R", "A", "T", "E", "F", "U", "L"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "green",
+      "phonetic": "/ɡriːn/",
+      "meaning": "adj. 绿色的",
+      "sentence": "The grass is green.",
+      "sentencePhonetic": "/ðə ɡrɑːs ɪz ɡriːn/",
+      "letters": ["G", "R", "E", "E", "N"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "gross",
+      "phonetic": "/ɡrəʊs/",
+      "meaning": "adj. 恶心的",
+      "sentence": "That's gross.",
+      "sentencePhonetic": "/ðæts ɡrəʊs/",
+      "letters": ["G", "R", "O", "S", "S"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "handsome",
+      "phonetic": "/ˈhænsəm/",
+      "meaning": "adj. 英俊的",
+      "sentence": "He is a handsome man.",
+      "sentencePhonetic": "/hiː ɪz ə ˈhænsəm mæn/",
+      "letters": ["H", "A", "N", "D", "S", "O", "M", "E"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "harmful",
+      "phonetic": "/ˈhɑːmfl/",
+      "meaning": "adj. 有害的",
+      "sentence": "Smoking is harmful to health.",
+      "sentencePhonetic": "/ˈsməʊkɪŋ ɪz ˈhɑːmfl tuː helθ/",
+      "letters": ["H", "A", "R", "M", "F", "U", "L"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "harsh",
+      "phonetic": "/hɑːʃ/",
+      "meaning": "adj. 严厉的",
+      "sentence": "The punishment was harsh.",
+      "sentencePhonetic": "/ðə ˈpʌnɪʃmənt wɒz hɑːʃ/",
+      "letters": ["H", "A", "R", "S", "H"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "helpful",
+      "phonetic": "/ˈhelpfl/",
+      "meaning": "adj. 有帮助的",
+      "sentence": "She is very helpful.",
+      "sentencePhonetic": "/ʃiː ɪz ˈveri ˈhelpfl/",
+      "letters": ["H", "E", "L", "P", "F", "U", "L"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "honest",
+      "phonetic": "/ˈɒnɪst/",
+      "meaning": "adj. 诚实的",
+      "sentence": "He is an honest man.",
+      "sentencePhonetic": "/hiː ɪz ən ˈɒnɪst mæn/",
+      "letters": ["H", "O", "N", "E", "S", "T"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "honorable",
+      "phonetic": "/ˈɒnərəbl/",
+      "meaning": "adj. 可敬的",
+      "sentence": "He is an honorable person.",
+      "sentencePhonetic": "/hiː ɪz ən ˈɒnərəbl ˈpɜːsn/",
+      "letters": ["H", "O", "N", "O", "R", "A", "B", "L", "E"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "hopeful",
+      "phonetic": "/ˈhəʊpfl/",
+      "meaning": "adj. 有希望的",
+      "sentence": "The future looks hopeful.",
+      "sentencePhonetic": "/ðə ˈfjuːtʃə lʊks ˈhəʊpfl/",
+      "letters": ["H", "O", "P", "E", "F", "U", "L"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "horrible",
+      "phonetic": "/ˈhɒrəbl/",
+      "meaning": "adj. 可怕的",
+      "sentence": "The accident was horrible.",
+      "sentencePhonetic": "/ði ˈæksɪdənt wɒz ˈhɒrəbl/",
+      "letters": ["H", "O", "R", "R", "I", "B", "L", "E"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "huge",
+      "phonetic": "/hjuːdʒ/",
+      "meaning": "adj. 巨大的",
+      "sentence": "The building is huge.",
+      "sentencePhonetic": "/ðə ˈbɪldɪŋ ɪz hjuːdʒ/",
+      "letters": ["H", "U", "G", "E"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "human",
+      "phonetic": "/ˈhjuːmən/",
+      "meaning": "adj. 人类的",
+      "sentence": "It's a human right.",
+      "sentencePhonetic": "/ɪts ə ˈhjuːmən raɪt/",
+      "letters": ["H", "U", "M", "A", "N"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "humble",
+      "phonetic": "/ˈhʌmbl/",
+      "meaning": "adj. 谦虚的",
+      "sentence": "He is very humble.",
+      "sentencePhonetic": "/hiː ɪz ˈveri ˈhʌmbl/",
+      "letters": ["H", "U", "M", "B", "L", "E"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "humorous",
+      "phonetic": "/ˈhjuːmərəs/",
+      "meaning": "adj. 幽默的",
+      "sentence": "He is very humorous.",
+      "sentencePhonetic": "/hiː ɪz ˈveri ˈhjuːmərəs/",
+      "letters": ["H", "U", "M", "O", "R", "O", "U", "S"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "ideal",
+      "phonetic": "/aɪˈdiːəl/",
+      "meaning": "adj. 理想的",
+      "sentence": "It's an ideal solution.",
+      "sentencePhonetic": "/ɪts ən aɪˈdiːəl səˈluːʃn/",
+      "letters": ["I", "D", "E", "A", "L"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "illegal",
+      "phonetic": "/ɪˈliːɡl/",
+      "meaning": "adj. 非法的",
+      "sentence": "It's illegal to do that.",
+      "sentencePhonetic": "/ɪts ɪˈliːɡl tuː duː ðæt/",
+      "letters": ["I", "L", "L", "E", "G", "A", "L"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "immediate",
+      "phonetic": "/ɪˈmiːdiət/",
+      "meaning": "adj. 立即的",
+      "sentence": "We need immediate action.",
+      "sentencePhonetic": "/wiː niːd ɪˈmiːdiət ˈækʃn/",
+      "letters": ["I", "M", "M", "E", "D", "I", "A", "T", "E"],
+      "category": "adjective",
+      "pos": "adjective"
+    },
+    {
+      "word": "immense",
+      "phonetic": "/ɪˈmens/",
+      "meaning": "adj. 巨大的",
+      "sentence": "The problem is immense.",
+      "sentencePhonetic": "/ðə ˈprɒbləm ɪz ɪˈmens/",
+      "letters": ["I", "M", "M", "E", "N", "S", "E"],
+      "category": "adjective",
+      "pos": "adjective"
+    }
+  ],
+  "aiWords": [],
+  "colorWords": []
+}

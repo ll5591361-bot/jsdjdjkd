@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Process and Download</title>
+</head>
+<body>
+    <h1>处理并下载</h1>
+    <div id="status">加载中...</div>
+    <button id="download" style="display:none; padding: 20px; font-size: 18px;">下载处理后的 JSON 文件</button>
+    
+    <script>
+        let processedJson = null;
+        
+        fetch('words-data.json')
+            .then(response => response.json())
+            .then(data => {
+                const allWords = data.words;
+                const nouns = allWords.filter(w => w.pos === 'noun');
+                const nonNouns = allWords.filter(w => w.pos !== 'noun');
+                
+                // 保留前388个名词
+                const nounsToKeep = nouns.slice(0, 388);
+                
+                document.getElementById('status').innerHTML = `
+                    <p>原名词数: ${nouns.length}</p>
+                    <p>保留名词数: ${nounsToKeep.length}</p>
+                    <p>删除名词数: ${nouns.length - 388}</p>
+                    <p>非名词数: ${nonNouns.length}</p>
+                    <p>新总单词数: ${nounsToKeep.length + nonNouns.length}</p>
+                `;
+                
+                // 合并
+                const newWords = [...nounsToKeep, ...nonNouns];
+                const newData = { words: newWords };
+                
+                // 转换为 JSON 字符串
+                processedJson = JSON.stringify(newData, null, 4);
+                
+                document.getElementById('download').style.display = 'block';
+            })
+            .catch(err => {
+                document.getElementById('status').innerHTML = '<p style="color: red;">错误: ' + err + '</p>';
+            });
+        
+        document.getElementById('download').addEventListener('click', function() {
+            if (!processedJson) return;
+            
+            const blob = new Blob([processedJson], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'words-data-processed.json';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+            
+            alert('文件已下载，请将其重命名为 words-data.json 并替换原文件');
+        });
+    </script>
+</body>
+</html>

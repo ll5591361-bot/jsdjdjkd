@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Save Data</title>
+</head>
+<body>
+    <h1>保存数据到文件</h1>
+    <p>点击按钮将处理后的数据发送到服务器保存</p>
+    <button id="save">保存到 words-data.json</button>
+    <div id="result"></div>
+    
+    <script>
+        let wordsData = null;
+        let processedData = null;
+        
+        // 加载并处理数据
+        fetch('words-data.json')
+            .then(response => response.json())
+            .then(data => {
+                wordsData = data;
+                console.log('加载完成，总单词数:', data.words.length);
+                
+                const allWords = data.words;
+                const nouns = allWords.filter(w => w.pos === 'noun');
+                const nonNouns = allWords.filter(w => w.pos !== 'noun');
+                
+                // 保留前388个名词
+                const nounsToKeep = nouns.slice(0, 388);
+                
+                console.log('名词总数:', nouns.length);
+                console.log('保留名词数:', nounsToKeep.length);
+                console.log('删除名词数:', nouns.length - 388);
+                
+                // 合并
+                const newWords = [...nounsToKeep, ...nonNouns];
+                processedData = { words: newWords };
+                
+                document.getElementById('result').innerHTML = `
+                    <p>数据已处理完成！</p>
+                    <p>原名词数: ${nouns.length}</p>
+                    <p>保留名词数: ${nounsToKeep.length}</p>
+                    <p>删除名词数: ${nouns.length - 388}</p>
+                    <p>新总单词数: ${newWords.length}</p>
+                    <p>点击上方按钮保存到文件</p>
+                `;
+            });
+        
+        document.getElementById('save').addEventListener('click', function() {
+            if (!processedData) {
+                alert('数据还未处理完成');
+                return;
+            }
+            
+            const jsonStr = JSON.stringify(processedData, null, 4);
+            
+            // 发送到服务器保存
+            fetch('/save', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: jsonStr
+            })
+            .then(response => response.text())
+            .then(result => {
+                document.getElementById('result').innerHTML += '<p style="color: green;"><strong>' + result + '</strong></p>';
+            })
+            .catch(err => {
+                document.getElementById('result').innerHTML += '<p style="color: red;">保存失败: ' + err + '</p>';
+            });
+        });
+    </script>
+</body>
+</html>

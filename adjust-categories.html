@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>调整分类单词数</title>
+</head>
+<body>
+    <h1>调整各分类单词数为100</h1>
+    <div id="status">加载中...</div>
+    <button id="process" style="display:none; padding: 20px; font-size: 18px;">开始处理并保存</button>
+    
+    <script>
+        let wordsData = null;
+        let processedData = null;
+        
+        // 目标分类数量
+        const targetCounts = {
+            'daily': 100,
+            'business': 100,
+            'travel': 100,
+            'food': 100,
+            'technology': 100,
+            'education': 86,
+            'sports': 100,
+            'medical': 100
+        };
+        
+        fetch('sports_words_batch1.json')
+            .then(response => response.json())
+            .then(data => {
+                wordsData = data.words;
+                console.log('加载完成，总单词数:', wordsData.length);
+                
+                // 统计各分类当前数量
+                const categoryCounts = {};
+                wordsData.forEach(w => {
+                    const cat = w.category;
+                    categoryCounts[cat] = (categoryCounts[cat] || 0) + 1;
+                });
+                
+                let statusHtml = '<h3>当前各分类数量：</h3><ul>';
+                for (const [cat, count] of Object.entries(categoryCounts)) {
+                    const target = targetCounts[cat] || count;
+                    statusHtml += `<li>${cat}: ${count} → ${target}</li>`;
+                }
+                statusHtml += '</ul>';
+                document.getElementById('status').innerHTML = statusHtml;
+                document.getElementById('process').style.display = 'block';
+            });
+        
+        document.getElementById('process').addEventListener('click', function() {
+            // 按分类分组
+            const categoryGroups = {};
+            wordsData.forEach(w => {
+                const cat = w.category;
+                if (!categoryGroups[cat]) categoryGroups[cat] = [];
+                categoryGroups[cat].push(w);
+            });
+            
+            // 调整每个分类的数量
+            const newWords = [];
+            for (const [cat, words] of Object.entries(categoryGroups)) {
+                const target = targetCounts[cat] || words.length;
+                // 保留前target个单词
+                const keptWords = words.slice(0, target);
+                newWords.push(...keptWords);
+                console.log(`${cat}: 原${words.length}个 → 保留${keptWords.length}个`);
+            }
+            
+            processedData = { words: newWords };
+            
+            // 发送到服务器保存
+            const jsonStr = JSON.stringify(processedData, null, 4);
+            fetch('/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: jsonStr
+            })
+            .then(response => response.text())
+            .then(result => {
+                document.getElementById('status').innerHTML += `<p style="color: green;"><strong>${result}</strong></p><p>新总单词数: ${newWords.length}</p>`;
+            });
+        });
+    </script>
+</body>
+</html>

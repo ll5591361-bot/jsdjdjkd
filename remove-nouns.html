@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Remove Nouns</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        textarea { width: 100%; height: 400px; font-family: monospace; font-size: 12px; }
+        button { padding: 10px 20px; font-size: 16px; margin: 10px 0; }
+        #stats { margin: 20px 0; padding: 10px; background: #f0f0f0; }
+    </style>
+</head>
+<body>
+    <h1>删除名词工具</h1>
+    <button id="process">开始处理并生成JSON</button>
+    <div id="stats"></div>
+    <h3>生成的JSON数据（请全选复制，保存到 words-data.json 文件）：</h3>
+    <textarea id="output" readonly></textarea>
+    
+    <script>
+        let wordsData = null;
+        
+        fetch('words-data.json')
+            .then(response => response.json())
+            .then(data => {
+                wordsData = data;
+                console.log('加载完成，总单词数:', data.words.length);
+                document.getElementById('stats').innerHTML = '<p>数据加载完成，总单词数: ' + data.words.length + '</p>';
+            });
+        
+        document.getElementById('process').addEventListener('click', function() {
+            if (!wordsData) {
+                alert('数据还未加载完成');
+                return;
+            }
+            
+            const allWords = wordsData.words;
+            
+            // 分离名词和非名词
+            const nouns = allWords.filter(w => w.pos === 'noun');
+            const nonNouns = allWords.filter(w => w.pos !== 'noun');
+            
+            // 保留前388个名词
+            const nounsToKeep = nouns.slice(0, 388);
+            const nounsToRemove = nouns.slice(388);
+            
+            // 合并保留的单词
+            const newWords = [...nounsToKeep, ...nonNouns];
+            
+            // 创建新的 JSON 数据
+            const newData = { words: newWords };
+            
+            // 转换为 JSON 字符串
+            const jsonStr = JSON.stringify(newData, null, 4);
+            
+            // 显示在文本框中
+            document.getElementById('output').value = jsonStr;
+            
+            document.getElementById('stats').innerHTML = `
+                <p><strong>处理完成！</strong></p>
+                <p>原名词数: ${nouns.length}</p>
+                <p>保留名词数: ${nounsToKeep.length}</p>
+                <p>删除名词数: ${nounsToRemove.length}</p>
+                <p>新总单词数: ${newWords.length}</p>
+                <p style="color: red;"><strong>请全选上方文本框中的内容，复制并保存到 words-data.json 文件</strong></p>
+            `;
+            
+            // 在控制台显示删除的单词
+            console.log('=== 删除的名词列表 ===');
+            nounsToRemove.forEach((w, i) => {
+                console.log(`${i+1}. ${w.word} (${w.category})`);
+            });
+        });
+    </script>
+</body>
+</html>

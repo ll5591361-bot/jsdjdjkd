@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>单词学习</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- 顶部标题栏 -->
+        <header class="header">
+            <div class="status-bar">
+                <div class="status-icons">
+                    <span class="signal">📶</span>
+                    <span class="wifi">📡</span>
+                    <span class="battery">🔋</span>
+                </div>
+                <span class="time">7:45</span>
+            </div>
+            <h1 class="app-title">单词学习</h1>
+        </header>
+
+        <!-- 主要内容区域 - 首页 -->
+        <main class="main-content page-home active">
+            <!-- 单词库切换 (已屏蔽) -->
+            <!-- <div class="word-bank-switcher">
+                <button class="word-bank-btn ai-mode" data-bank="ai" onclick="switchWordBank('ai')">🤖 AI</button>
+                <button class="word-bank-btn general-mode" data-bank="general" onclick="switchWordBank('general')">📚 普通</button>
+                <button class="word-bank-btn color-mode" data-bank="color" onclick="switchWordBank('color')">🎨 颜色</button>
+            </div> -->
+
+            <!-- 进度指示 -->
+            <div class="progress-indicator">
+                <span class="progress-text">1/15</span>
+                <div class="mode-toggle">
+                    <span class="toggle-circle"></span>
+                </div>
+            </div>
+
+            <!-- 单词卡片 -->
+            <div class="word-card">
+                <h2 class="word">template</h2>
+                <p class="phonetic">/ˈtemplət/</p>
+                <p class="meaning">n. 模板（可复用的工作流）</p>
+                <div class="example-sentence">
+                    <p class="sentence">I'll use this template for my project.</p>
+                    <p class="sentence-phonetic">/aɪl juːz ðɪs ˈtemplət fɔː maɪ ˈprɒdʒekt/</p>
+                </div>
+            </div>
+
+            <!-- 控制按钮 -->
+            <div class="control-buttons">
+                <button class="btn btn-prev">
+                    <span class="btn-text">上一<br>页</span>
+                </button>
+                <button class="btn btn-play">
+                    <span class="play-icon">🔊</span>
+                    <span class="btn-text">播放</span>
+                </button>
+                <button class="btn btn-next">
+                    <span class="btn-text">下一<br>页</span>
+                </button>
+            </div>
+
+            <!-- 字母键盘 -->
+            <div class="keyboard">
+                <div class="keyboard-row">
+                    <button class="key key-active">A</button>
+                    <button class="key key-active">B</button>
+                    <button class="key key-active">C</button>
+                    <button class="key key-active">D</button>
+                    <button class="key key-active">E</button>
+                    <button class="key">F</button>
+                    <button class="key">G</button>
+                </div>
+                <div class="keyboard-row">
+                    <button class="key key-active">H</button>
+                    <button class="key">I</button>
+                    <button class="key">J</button>
+                    <button class="key">K</button>
+                    <button class="key">L</button>
+                    <button class="key key-active">M</button>
+                    <button class="key key-active">N</button>
+                </div>
+                <div class="keyboard-row">
+                    <button class="key">O</button>
+                    <button class="key key-active">P</button>
+                    <button class="key">Q</button>
+                    <button class="key">R</button>
+                    <button class="key key-active">S</button>
+                    <button class="key key-active">T</button>
+                    <button class="key key-active">U</button>
+                </div>
+                <div class="keyboard-row">
+                    <button class="key">V</button>
+                    <button class="key key-active">W</button>
+                    <button class="key">X</button>
+                    <button class="key">Y</button>
+                    <button class="key">Z</button>
+                </div>
+            </div>
+        </main>
+
+
+
+        <!-- 主要内容区域 - 单词本页面 -->
+        <main class="main-content page-words">
+            <!-- 搜索栏 -->
+            <div class="search-bar">
+                <input type="text" class="search-input" placeholder="搜索单词...">
+                <button class="search-btn">🔍</button>
+            </div>
+
+            <!-- 词性分类统计 -->
+            <div class="pos-stats">
+                <div class="pos-stat-item">
+                    <span class="pos-stat-number">10</span>
+                    <span class="pos-stat-label">词性分类</span>
+                </div>
+                <div class="pos-stat-item">
+                    <span class="pos-stat-number">1,250</span>
+                    <span class="pos-stat-label">总单词</span>
+                </div>
+            </div>
+
+            <!-- 词性分类网格 -->
+            <div class="pos-grid">
+                <div class="pos-card" data-pos="noun">
+                    <div class="pos-icon">📦</div>
+                    <div class="pos-name">名词</div>
+                    <div class="pos-en">Noun</div>
+                    <div class="pos-count">320词</div>
+                </div>
+
+                <div class="pos-card" data-pos="pronoun">
+                    <div class="pos-icon">🎯</div>
+                    <div class="pos-name">代词</div>
+                    <div class="pos-en">Pronoun</div>
+                    <div class="pos-count">45词</div>
+                </div>
+
+                <div class="pos-card" data-pos="verb">
+                    <div class="pos-icon">⚡</div>
+                    <div class="pos-name">动词</div>
+                    <div class="pos-en">Verb</div>
+                    <div class="pos-count">380词</div>
+                </div>
+
+                <div class="pos-card" data-pos="adjective">
+                    <div class="pos-icon">🎨</div>
+                    <div class="pos-name">形容词</div>
+                    <div class="pos-en">Adjective</div>
+                    <div class="pos-count">210词</div>
+                </div>
+
+                <div class="pos-card" data-pos="adverb">
+                    <div class="pos-icon">📊</div>
+                    <div class="pos-name">副词</div>
+                    <div class="pos-en">Adverb</div>
+                    <div class="pos-count">95词</div>
+                </div>
+
+                <div class="pos-card" data-pos="numeral">
+                    <div class="pos-icon">🔢</div>
+                    <div class="pos-name">数词</div>
+                    <div class="pos-en">Numeral</div>
+                    <div class="pos-count">60词</div>
+                </div>
+
+                <div class="pos-card" data-pos="article">
+                    <div class="pos-icon">📰</div>
+                    <div class="pos-name">冠词</div>
+                    <div class="pos-en">Article</div>
+                    <div class="pos-count">3词</div>
+                </div>
+
+                <div class="pos-card" data-pos="preposition">
+                    <div class="pos-icon">🔗</div>
+                    <div class="pos-name">介词</div>
+                    <div class="pos-en">Preposition</div>
+                    <div class="pos-count">65词</div>
+                </div>
+
+                <div class="pos-card" data-pos="conjunction">
+                    <div class="pos-icon">➕</div>
+                    <div class="pos-name">连词</div>
+                    <div class="pos-en">Conjunction</div>
+                    <div class="pos-count">42词</div>
+                </div>
+
+                <div class="pos-card" data-pos="interjection">
+                    <div class="pos-icon">💬</div>
+                    <div class="pos-name">感叹词</div>
+                    <div class="pos-en">Interjection</div>
+                    <div class="pos-count">30词</div>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- 主要内容区域 - AI页面 -->
+        <main class="main-content page-review">
+            <!-- 搜索栏 -->
+            <div class="search-bar">
+                <input type="text" class="search-input" placeholder="搜索AI词汇...">
+                <button class="search-btn">🔍</button>
+            </div>
+
+            <!-- AI工具分类 -->
+            <div class="ai-section">
+                <h3 class="section-title">🤖 AI工具</h3>
+                <div class="ai-grid">
+                    <div class="ai-card" data-ai="comfyui">
+                        <div class="ai-icon">🎨</div>
+                        <div class="ai-name">ComfyUI</div>
+                        <div class="ai-desc">AI图像生成工具</div>
+                    </div>
+                    <div class="ai-card" data-ai="prompt">
+                        <div class="ai-icon">💭</div>
+                        <div class="ai-name">AI提示词</div>
+                        <div class="ai-desc">Prompt Engineering</div>
+                    </div>
+                    <div class="ai-card" data-ai="camera">
+                        <div class="ai-icon">🎬</div>
+                        <div class="ai-name">拍摄运镜</div>
+                        <div class="ai-desc">Camera Movement</div>
+                    </div>
+                </div>
+            </div>
+
+
+        </main>
+
+        <!-- 主要内容区域 - 分类页面 -->
+        <main class="main-content page-category">
+            <!-- 搜索栏 -->
+            <div class="search-bar">
+                <input type="text" class="search-input" placeholder="搜索单词分类...">
+                <button class="search-btn">🔍</button>
+            </div>
+
+            <!-- 分类统计 -->
+            <div class="category-stats">
+                <div class="stat-item">
+                    <span class="stat-number">12</span>
+                    <span class="stat-label">分类</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">1,250</span>
+                    <span class="stat-label">单词</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">85</span>
+                    <span class="stat-label">已掌握</span>
+                </div>
+            </div>
+
+            <!-- 分类列表 -->
+            <div class="category-list">
+                <div class="category-card" data-category="daily">
+                    <div class="category-icon">🏠</div>
+                    <div class="category-info">
+                        <h3 class="category-name">日常生活</h3>
+                        <p class="category-desc">常用日常词汇</p>
+                        <div class="category-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 65%"></div>
+                            </div>
+                            <span class="progress-text">65/100</span>
+                        </div>
+                    </div>
+                    <span class="category-arrow">›</span>
+                </div>
+
+                <div class="category-card" data-category="business">
+                    <div class="category-icon">💼</div>
+                    <div class="category-info">
+                        <h3 class="category-name">商务英语</h3>
+                        <p class="category-desc">职场商务用语</p>
+                        <div class="category-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 30%"></div>
+                            </div>
+                            <span class="progress-text">30/100</span>
+                        </div>
+                    </div>
+                    <span class="category-arrow">›</span>
+                </div>
+
+                <div class="category-card" data-category="travel">
+                    <div class="category-icon">✈️</div>
+                    <div class="category-info">
+                        <h3 class="category-name">旅游出行</h3>
+                        <p class="category-desc">旅行必备词汇</p>
+                        <div class="category-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 80%"></div>
+                            </div>
+                            <span class="progress-text">80/100</span>
+                        </div>
+                    </div>
+                    <span class="category-arrow">›</span>
+                </div>
+
+                <div class="category-card" data-category="food">
+                    <div class="category-icon">🍔</div>
+                    <div class="category-info">
+                        <h3 class="category-name">美食餐饮</h3>
+                        <p class="category-desc">食物与餐厅用语</p>
+                        <div class="category-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 45%"></div>
+                            </div>
+                            <span class="progress-text">45/100</span>
+                        </div>
+                    </div>
+                    <span class="category-arrow">›</span>
+                </div>
+
+                <div class="category-card" data-category="technology">
+                    <div class="category-icon">💻</div>
+                    <div class="category-info">
+                        <h3 class="category-name">科技数码</h3>
+                        <p class="category-desc">科技与互联网词汇</p>
+                        <div class="category-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 90%"></div>
+                            </div>
+                            <span class="progress-text">90/100</span>
+                        </div>
+                    </div>
+                    <span class="category-arrow">›</span>
+                </div>
+
+                <div class="category-card" data-category="education">
+                    <div class="category-icon">📚</div>
+                    <div class="category-info">
+                        <h3 class="category-name">教育学习</h3>
+                        <p class="category-desc">学习与考试词汇</p>
+                        <div class="category-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 55%"></div>
+                            </div>
+                            <span class="progress-text">55/100</span>
+                        </div>
+                    </div>
+                    <span class="category-arrow">›</span>
+                </div>
+
+                <div class="category-card" data-category="sports">
+                    <div class="category-icon">⚽</div>
+                    <div class="category-info">
+                        <h3 class="category-name">运动健身</h3>
+                        <p class="category-desc">体育与健身词汇</p>
+                        <div class="category-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 25%"></div>
+                            </div>
+                            <span class="progress-text">25/100</span>
+                        </div>
+                    </div>
+                    <span class="category-arrow">›</span>
+                </div>
+
+                <div class="category-card" data-category="medical">
+                    <div class="category-icon">🏥</div>
+                    <div class="category-info">
+                        <h3 class="category-name">医疗健康</h3>
+                        <p class="category-desc">医疗与健康词汇</p>
+                        <div class="category-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 40%"></div>
+                            </div>
+                            <span class="progress-text">40/100</span>
+                        </div>
+                    </div>
+                    <span class="category-arrow">›</span>
+                </div>
+            </div>
+        </main>
+
+
+
+        <!-- 底部导航栏 -->
+        <nav class="bottom-nav">
+            <a href="#" class="nav-item nav-active" onclick="switchPage('home')">
+                <span class="nav-icon">🏠</span>
+                <span class="nav-text">首页</span>
+            </a>
+            <a href="#" class="nav-item" onclick="switchPage('words')">
+                <span class="nav-icon">📖</span>
+                <span class="nav-text">单词</span>
+            </a>
+            <a href="#" class="nav-item" onclick="switchPage('ai')">
+                <span class="nav-icon">🤖</span>
+                <span class="nav-text">AI</span>
+            </a>
+        </nav>
+    </div>
+
+    <script src="script.js?v=9"></script>
+</body>
+</html>
